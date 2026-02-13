@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d5840702612c9af8",
+        "id": "53e2eae4e6bf5fb6",
         "type": "tabs",
         "children": [
           {
-            "id": "773a5fe886b593c9",
+            "id": "9fca5d88b36e3d59",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -90,6 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "WEBSITE-IDEAS-TEST.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for WEBSITE-IDEAS-TEST"
             }
           },
           {
@@ -108,11 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "WEBSITE-IDEAS-TEST.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from WEBSITE-IDEAS-TEST"
             }
           },
           {
@@ -150,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "WEBSITE-IDEAS-TEST.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of WEBSITE-IDEAS-TEST"
             }
           }
         ]
@@ -173,9 +176,12 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "773a5fe886b593c9",
-  "lastOpenFiles": []
+  "active": "e41ab790d4ad9a96",
+  "lastOpenFiles": [
+    "WEBSITE-IDEAS-TEST.md"
+  ]
 }
