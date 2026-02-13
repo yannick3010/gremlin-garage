@@ -1,0 +1,33 @@
+# MEMORY.md — Memory System Overview
+
+**System**: PARA + Atomic Facts  
+**Last Updated**: __TIMESTAMP__
+
+---
+
+## Quick Links
+
+- **[Life Knowledge Graph](./life/)** — Structured entity memory
+- **[Daily Notes](./memory/)** — Raw conversation timeline
+
+---
+
+## The Layers
+
+### 1. Knowledge Graph (`life/`)
+
+**PARA structure:**
+- `projects/` — Active deals, initiatives
+- `areas/` — Ongoing responsibilities (people, companies, roles)
+- `resources/` — Reference material
+- `archives/` — Inactive items
+
+### 2. Daily Notes (`memory/YYYY-MM-DD.md`)
+
+Raw timeline. Extract durable facts during heartbeat.
+
+---
+
+## Current Entities
+
+*(To be populated as AI learns about user)*
