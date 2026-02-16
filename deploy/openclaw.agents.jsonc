@@ -1,0 +1,94 @@
+// Template for agents.list and bindings in openclaw.json
+// Copy relevant sections into ~/.openclaw/openclaw.json on EC2
+// Do NOT commit with real credentials — this is a structure reference only
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-sonnet-4-20250514",
+        "fallbacks": ["google/gemini-1.5-flash"]
+      }
+    },
+    "list": [
+      {
+        "id": "gizmo",
+        "name": "Gizmo",
+        "default": true,
+        "workspace": "~/.openclaw/workspace-gizmo",
+        "model": "anthropic/claude-sonnet-4-20250514"
+        // Gizmo is the default agent — all unmatched inbound routes here
+      },
+      {
+        "id": "jordan-belfuzz",
+        "name": "Jordan Belfuzz",
+        "workspace": "~/.openclaw/workspace-jordan-belfuzz",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "steve-mogniak",
+        "name": "Steve Mogniak",
+        "workspace": "~/.openclaw/workspace-steve-mogniak",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "donna-pawsen",
+        "name": "Donna Pawsen",
+        "workspace": "~/.openclaw/workspace-donna-pawsen",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "karl-lagerfur",
+        "name": "Karl Lagerfur",
+        "workspace": "~/.openclaw/workspace-karl-lagerfur",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "david-ogilwai",
+        "name": "David Ogilwai",
+        "workspace": "~/.openclaw/workspace-david-ogilwai",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "ernest-hemingwai",
+        "name": "Ernest Hemingwai",
+        "workspace": "~/.openclaw/workspace-ernest-hemingwai",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "fred-moggers",
+        "name": "Fred Moggers",
+        "workspace": "~/.openclaw/workspace-fred-moggers",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "warren-buffuzz",
+        "name": "Warren Buffuzz",
+        "workspace": "~/.openclaw/workspace-warren-buffuzz",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      },
+      {
+        "id": "alan-furring",
+        "name": "Alan Furring",
+        "workspace": "~/.openclaw/workspace-alan-furring",
+        "model": "anthropic/claude-sonnet-4-20250514"
+      }
+    ]
+  },
+
+  // Bindings route inbound messages to agents
+  // Customize per your Slack workspace setup
+  "bindings": [
+    // Default: everything routes to Gizmo unless matched below
+    { "agentId": "gizmo", "match": { "channel": "slack" } },
+    { "agentId": "gizmo", "match": { "channel": "telegram" } }
+
+    // Example: route DMs to Jordan's Slack profile to Jordan
+    // { "agentId": "jordan-belfuzz", "match": { "channel": "slack", "peer": { "kind": "direct", "id": "JORDAN_SLACK_USER_ID" } } }
+
+    // Example: route a specific Slack channel to Steve
+    // { "agentId": "steve-mogniak", "match": { "channel": "slack", "peer": { "kind": "channel", "id": "C_ENGINEERING_CHANNEL_ID" } } }
+
+    // Example: route mentions of @jordan in group channels
+    // Use agents.list[].groupChat.mentionPatterns for @mention routing
+  ]
+}
