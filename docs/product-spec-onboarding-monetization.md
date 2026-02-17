@@ -30,6 +30,48 @@ This spec covers the product improvements needed to:
 - Dashboard for all users (free tier)
 - Persona-driven 7-day onboarding sequence
 - Pro subscription with trial
+- Rich signup data collection → personalized first message
+
+---
+
+## Data Collection Strategy
+
+### What We Collect (Signup + Onboarding)
+
+| Field | When | Why |
+|-------|------|-----|
+| Name | Signup | Personalization ("Hi Nick") |
+| Email | Signup | Account, notifications |
+| Role / Industry | Signup (optional) | Context for suggestions |
+| What they need help with | Onboarding (Day 0) | Tailor capabilities |
+| Communication style | Onboarding (Day 0) | Adjust verbosity/tone |
+| Top priorities | Onboarding (Day 0) | First automation suggestions |
+
+### The Magic Moment
+
+**Current:** *"Hi! I'm your AI assistant."*
+
+**Target:** *"Hi Nick! I know you want help with email and calendar. I've set up your inbox to triage messages and created a daily standup reminder for 9am. Want me to adjust anything?"*
+
+**How it works:**
+1. User answers preference questions (name, priorities, style)
+2. Bot stores in `user.preferences`
+3. Bot executes 1-2 instant setup actions based on answers
+4. Bot references this in first proactive message
+
+### Setup Actions (Auto-Configured)
+
+Based on what user says they need help with:
+
+| User says... | Bot auto-sets up... |
+|--------------|---------------------|
+| "email" | Email summary (daily digest) |
+| "calendar" | Meeting reminder (30 min before) |
+| "tasks" | Task reminder (daily at 9am) |
+| "research" | Web search capability enabled |
+| "notes" | Meeting notes template |
+
+This makes the bot feel magical immediately — it *did something*, not just asked questions.
 
 ---
 
