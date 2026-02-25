@@ -10,14 +10,14 @@ kanban-plugin: board
 
 ## In Progress
 
+## Approval
+
 - [ ] **[GG-002] ESPN Headlines Summary**
   - **Assigned:** Gizmo
   - **Added:** 2026-02-25
   - **Description:** Check for the latest headlines on ESPN, send a summary in Telegram
   - **Requirements:** Message sent to Yaya via Telegram with latest ESPN headlines. Tool must return ok: true with a messageId.
-  - **Notes:** (in progress)
-
-## Approval
+  - **Notes:** ✅ Sent via Telegram (messageId: 1605) — ESPN top headlines for Feb 25 covering NFL, NBA, College Hoops, MLB, Hockey, Soccer, Golf
 
 ## Done
 
