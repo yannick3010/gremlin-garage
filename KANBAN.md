@@ -18,16 +18,16 @@ kanban-plugin: board
 
 ## Approval
 
-- [ ] **[GG-003] Olympic Events Tonight**
+
+
+## Done
+
+- [x] **[GG-003] Olympic Events Tonight**
   - **Assigned:** Gizmo
   - **Added:** 2026-02-25
   - **Description:** Check what Olympic events are on tonight, return them with PT timezone in Telegram
   - **Requirements:** Message sent to Yaya via Telegram with tonight's Olympic events and PT times. Tool must return ok: true with a messageId.
-  - **Notes:** ✅ Review passed — 2026 Winter Olympics ended Feb 22, sub-agent correctly informed Yaya with accurate info + Paralympics heads up. Telegram delivered.
-
-
-
-## Done
+  - **Notes:** ✅ Approved by Yaya — Olympics ended Feb 22, correctly informed with Paralympics heads up.
 
 - [x] **[GG-002] ESPN Headlines Summary**
   - **Assigned:** Gizmo
