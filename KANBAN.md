@@ -6,6 +6,7 @@ kanban-plugin: board
 
 ## Inbox
 
+- [ ] check for the latest headlines on espn, send a summary in telegram
 
 
 ## Up Next
