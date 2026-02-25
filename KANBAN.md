@@ -8,14 +8,14 @@ kanban-plugin: board
 
 ## Up Next
 
+## In Progress
+
 - [ ] **[GG-002] ESPN Headlines Summary**
   - **Assigned:** Gizmo
   - **Added:** 2026-02-25
   - **Description:** Check for the latest headlines on ESPN, send a summary in Telegram
   - **Requirements:** Message sent to Yaya via Telegram with latest ESPN headlines. Tool must return ok: true with a messageId.
-  - **Notes:** (pending)
-
-## In Progress
+  - **Notes:** (in progress)
 
 ## Approval
 
