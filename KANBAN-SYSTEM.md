@@ -69,9 +69,16 @@ Each card is a markdown list item:
 
 ### When work is complete:
 1. Move card from **In Progress** → **Review**
-2. Check output against the card's **Requirements**
-3. **Pass:** Move to **Approval**, notify Yaya via Telegram
-4. **Fail:** Write clear failure notes in card **Notes**, push back to **In Progress**
+2. Check output against the card's **Requirements** — every requirement must be fully met
+3. **If the task required sending a Telegram message:** Verify the message was actually delivered (tool returned success). If delivery failed for any reason, that is a FAIL.
+4. **Pass:** Move to **Approval**, notify Yaya via Telegram (channel=telegram, target=7424731418)
+5. **Fail:** Write clear failure notes in card **Notes** explaining exactly what didn't meet requirements, push back to **In Progress** and retry
+
+### Review is strict:
+- "Partially done" = Fail
+- Delivery errors = Fail
+- Wrong recipient = Fail
+- Only move to Approval when ALL requirements are fully satisfied
 
 ### Never:
 - Work on more than one card at a time
