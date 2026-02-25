@@ -6,10 +6,15 @@ kanban-plugin: board
 
 ## Inbox
 
-- [ ] check when the first formula 1 event of the season is, return event date and time in PT in telegram
 
 
 ## Up Next
+
+- [ ] **[GG-004] First F1 Event of the Season**
+  - **Assigned:** Gizmo
+  - **Added:** 2026-02-25
+  - **Description:** Check when the first Formula 1 event of the season is, return event date and time in PT timezone
+  - **Requirements:** Message sent to Yaya via Telegram with the first F1 event of the season, date and PT time. Tool must return ok: true with a messageId.
 
 
 
